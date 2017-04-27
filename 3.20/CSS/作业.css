@@ -1,0 +1,388 @@
+    *{
+		margin: 0px;
+		padding: 0px;
+	}
+	.header{
+		width: 1000px;
+		height: 160px;
+		margin: 0 auto;
+	}
+	.top{
+		width: 1000px;
+		height: 100px;
+		background-color: #fff;
+	}
+	.box1{
+		width: 200px;
+		height: 20px;
+		margin-left: 22px;
+		margin-top: 42px;
+		float: left;
+	}
+	.box2{
+		width: 227px;
+		height: 20px;
+		float: right;
+		margin-right: 22px;
+		margin-top: 20px;
+	}
+	.nav{
+		width: 1000px;
+		height: 60px;
+		background-color: #303030;
+	}
+	.nav .nav1 li{
+		float: left;
+		width: 100px;
+		height: 60px;
+		text-align: center;
+		line-height: 60px;
+		list-style: none;
+		margin-left: 10px;
+	}
+	.nav .nav1{
+		margin-left: 49px;
+		color: #fff;
+		font-size: 15px;
+	}
+	.nav .nav1 .nav2{
+		border-right: 1px solid #4a4a4a;
+	}
+	.banner{
+		width: 1000px;
+		height: 470px;
+		background-color: green;
+		margin: 0 auto;
+	}
+	.contont{
+		width:  1000px;
+		height: 540px;
+		margin: 0 auto;
+	}
+	.contont1{
+		width: 1000px;
+		height: 260px;
+		background-color: pink;
+	}
+	.contont11{
+		width: 500px;
+		height: 260px;
+		background-color: #fff;
+	}
+	.contont111{
+		font-size: 17px;
+		margin-left: 22px;
+		margin-top: 36px;
+	}
+	.contont112{
+		margin-top: 30px;
+		margin-left: 34px;
+		font-size: 12px;
+		color: #515151;
+	}
+	.contont112 li{
+		margin-top: 12px;
+	}
+	.contont113 li{
+		margin-top: 12px;
+	}
+	.contont113{
+		float: right;
+		margin-top: -140px;
+		font-size: 12px;
+		color: #515151;
+		margin-right:28px;
+		list-style: none;
+	}
+	.contont12{
+		width: 240px;
+		height: 260px;
+		background-color: #f1f1f1;
+	}
+	.contont121{
+		font-size: 17px;
+		margin-top: 36px;
+		margin-left: 24px;
+	}
+	.contont122{
+		font-size: 14px;
+		margin-top: 35px;
+		margin-left: 24px;
+		color: #5a5a5a;
+	}
+	.contont123{
+		margin-left: 24px;
+		font-size: 13px;r
+		margin-top: 22px;
+		border: 1px solid #f1f1f1;
+		width: 140px;
+		color: #969696;
+		margin-top:12px;
+	}
+	.contont13{
+		width: 260px;
+		height: 260px;
+		background-color: #fff;
+	}
+	.contont131{
+		font-size: 17px;
+		margin-top: 36px;
+		margin-left: 24px;
+	}
+	.contont132{
+		font-size: 12px;
+		margin-top: 29px;
+		margin-left: 24px;
+		color: #5a5a5a;
+	}
+	.contont133{
+		font-size: 12px;
+		margin-left: 24px;
+		margin-top: 13px;
+		color: #5a5a5a;
+	}
+	.contont134{
+		border-radius: 5px;
+		width: 66px;
+		height: 19px;
+		background-color: #aeaeae;
+		font-size: 15px;
+		color: #fff;
+		margin-left: 25px;
+		margin-top: 48px;
+		float: left;
+		border-radius: 
+	}
+	.contont135{
+		float: right;
+		width: 83px;
+		height: 109px;
+	}
+	.fll1{
+		float: left;
+	}
+	.contont2{
+		width: 1000px;
+		height: 280px;
+		background-color: blue;
+	}
+	.contont21{
+		width: 250px;
+		height:280px;
+		background-color: #fff;
+	}
+	.contont211{
+		font-size: 17px;
+		margin-left: 22px;
+		margin-top: 5px;
+	}
+	.contont212{
+		margin-top: 17px;
+		margin-left: 20px;
+	}
+	.contont213{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 20px;
+	}
+	.contont214{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 12px;
+	}
+	.contont22{
+		width: 250px;
+		height:280px;
+		background-color: #fff;
+	}
+	.contont221{
+		margin-top: 43px;
+		margin-left: 20px;
+	}
+	.contont222{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 20px;
+	}
+	.contont223{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 12px;
+	}
+	.contont23{
+		width: 250px;
+		height:280px;
+		background-color: #fff;
+	}
+	.contont231{
+		margin-top: 43px;
+		margin-left: 20px;
+	}
+	.contont232{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 20px;
+	}
+	.contont233{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 12px;
+	}
+	.contont24{
+		width: 250px;
+		height:280px;
+		background-color: #fff;
+	}
+	.contont241{
+		margin-top: 43px;
+		margin-left: 20px;
+	}
+	.contont242{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 20px;
+	}
+	.contont243{
+		font-size: 11.68px;
+		color: #535353;
+		margin-left:20px;
+		margin-top: 12px;
+	}
+	.fll2{
+		float: left;
+	}
+	.footer{
+		width: 1000px;
+		height: 330px;
+		margin: 0 auto;
+	}
+	.footer1{
+		width: 1000px;
+		height: 250px;
+		background-color: green;
+	}
+	.footer11{
+		width: 500px;
+		height: 250px;
+		background-color: #e5e5e5;
+		border: 0px solid #e5e5e5;
+	}
+	.footer111{
+		font-size: 15px;
+		color: #5a5a5a;
+		border-bottom: 1px solid #c5c5c5;
+		width: 452px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 18px;
+		margin-left: 30px;
+	}
+	.footer112{
+		font-size: 12px;
+		color: #737373;
+		margin-left: 35px;
+		margin-top: 14.5px;
+	}
+	.footer112 li{
+		border: 1px solid #e5e5e5;
+		width: 130px;
+		height: 24px;
+		line-height: 24px;
+		list-style: none;
+	}
+	.footer113{
+		font-size: 12px;
+		color: #737373;
+		margin-left: 25px;
+		margin-top: 14.5px;
+	}
+	.footer113 li{
+		border: 1px solid #e5e5e5;
+		width: 130px;
+		height: 24px;
+		line-height: 24px;
+		list-style: none;
+	}
+	.footer114{
+		font-size: 12px;
+		color: #737373;
+		margin-left: 25px;
+		margin-top: 14.5px;
+	}
+	.footer114 li{
+		border: 1px solid #e5e5e5;
+		width: 130px;
+		height: 24px;
+		line-height: 24px;
+		list-style: none;
+	}
+	.fll3{
+		float: left;
+	}
+	.footer12{
+		width: 200px;
+		height: 250px;
+		background-color: #e5e5e5;
+	}
+	.footer121{
+		font-size: 15px;
+		color: #5a5a5a;
+		border-bottom: 1px solid #c5c5c5;
+		width: 150px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 18px;
+		margin-left: 30px;
+	}
+	.footer122{
+		font-size: 12px;
+		color: #737373;
+		margin-left: 35px;
+		margin-top: 14.5px;
+	}
+	.footer122 li{
+		border: 1px solid #e5e5e5;
+		width: 130px;
+		height: 24px;
+		line-height: 24px;
+		list-style: none;
+	}
+	.footer13{
+		width: 300px;
+		height: 250px;
+		background-color: #e5e5e5;
+	}
+	.footer131{
+		font-size: 15px;
+		color: #5a5a5a;
+		border-bottom: 1px solid #c5c5c5;
+		width: 220px;
+		height: 40px;
+		line-height: 40px;
+		margin-top: 18px;
+		margin-left: 30px;
+	}
+	.footer132{
+		margin-left: 56px;
+		margin-top: 16px;
+	}
+	.fll4{
+		float: left;
+	}
+	.footer2{
+		width: 1000px;
+		height: 80px;
+		background-color: pink;
+	}
+	.footer22{
+		width: 380px;
+		height: 80px;
+		background-color: green;
+	}

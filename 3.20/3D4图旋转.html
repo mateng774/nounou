@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.neirong{
+			transform-style: preserve-3d;
+			transition: transform 5s;
+			transform-origin: 100px 100px;
+		}
+		.weizhi{
+			width: 200px;
+			height: 200px; 
+			border: 2px solid #fff;
+			margin: 100px auto;
+			position: relative;
+			perspective: 500px;
+		}
+		.neirong img{
+			position: absolute;
+			top:0px;
+		}
+		.neirong:hover{
+			transform: rotateY(360deg) rotateX(360deg);
+		}
+		.tu1{
+			transform: translateZ(100px);
+		}
+		.tu2{
+			transform: translateZ(-100px);
+		}
+		.tu3{
+			transform: rotateY(90deg) translateZ(100px);
+			}
+		.tu4{
+			transform: rotateY(90deg) translateZ(-100px);
+		}
+		.tu5{
+			transform: rotateX(90deg) translateZ(100px);
+		}
+		.tu6{
+			transform: rotateX(90deg) translateZ(-100px);
+		}
+	</style>
+</head>
+<body>
+	<div class="weizhi">
+		<div class="neirong">
+			<img class="tu1" src="图片/1.jpg" alt="">
+			<img class="tu2" src="图片/2.jpg" alt="">
+			<img class="tu3" src="图片/3.jpg" alt="">
+			<img class="tu4" src="图片/4.jpg" alt="">
+			<img class="tu5" src="图片/4.jpg" alt="">
+			<img class="tu6" src="图片/4.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>

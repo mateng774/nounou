@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="UI库/css/bootstrap.css">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.header{
+			width: 7.18rem;
+			height: 0.93rem;
+			border: 2px solid red;
+		}
+		span{
+			font-size: 50px;
+			color: yellow;
+		}
+		h1{
+			margin-left: 150px;
+			width: 200px;
+			height: 100px;
+			position: relative;
+		}
+		h1:before{
+			content:"";
+			border: 1px solid red;
+			display: block;
+			width: 100px;
+			position: absolute;
+			top: 20px;
+			left: -120px;
+		}
+		h1:after{
+			content:"";
+			border: 1px solid red;
+			display: block;
+			width: 100px;
+			position: absolute;
+			top: 20px;
+			left: 170px;
+		}
+	</style>
+</head>
+<body>
+    <div class="header"></div>
+    <button type="button" class="btn btn-success">
+    	<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+    </button>
+    <table class="table table-hover">
+    	<thead>
+    		<th>姓名</th>
+    		<th>性别</th>
+    		<th>年龄</th>
+    	</thead>
+    	<tbody>
+    		<tr>
+    			<td>老四</td>
+    			<td>女</td>
+    			<td>99</td>
+    		</tr>
+    		<tr>
+    			<td>老五</td>
+    			<td>女</td>
+    			<td>98</td>
+    		</tr>
+    		<tr>
+    			<td>老六</td>
+    			<td>女</td>
+    			<td>97</td>
+    		</tr>
+    	</tbody>
+    </table>
+    <h1>你好世界</h1>
+	<script src="fontsizeset.js"></script>
+</body>
+</html>

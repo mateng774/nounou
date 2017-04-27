@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="UI库/css/bootstrap.css">
+	<style>
+	*{
+		margin: 0;
+		padding: 0;
+	}
+		.header{
+			width: 7.2rem;
+			height: 1.46rem;			
+		}
+		.header1{
+			width: 7.18rem;
+			height: 0.48rem;
+			border: 1px solid black;
+			position: relative;
+
+		}
+		.header img{
+			width: 7.16rem;
+			height: 0.47rem;
+			position: absolute;
+		}
+		.header2{
+			width: 7.18rem;
+			height: 0.94rem;
+			border: 1px solid #2aacff;
+			background-color: #2aacff;
+		}
+		.header2 img{
+			margin-top: -0.19rem;
+			margin-left: -0.10rem;
+			width: 0.2rem;
+			height: 0.38rem;
+			background-color: #2aacff;
+		}
+		.header2 button{
+			margin-top: 0.25rem;
+			margin-left: 0.3rem;
+			width: 0.2rem;
+			height: 0.38rem;
+			background-color: #2aacff;
+		}
+		.header2 h1{
+			font-size: 0.35rem;
+			width: 1.5rem;
+			height: 0.38rem;
+			color: #fff;
+			margin-left: 2.81rem;
+			margin-top: -0.39rem;
+		}
+		.contont1{
+			width: 7.2rem;
+			height: 5.7rem;
+		}
+		.contont11{
+			width: 7.18rem;
+			height: 4.28rem;
+			border-bottom: 1px solid #cccccc;
+		}
+		.contont11 img{
+			width: 7.18rem;
+			height: 4.27rem;
+		}
+		.contont12{
+			width: 7.18rem;
+			height: 1.14rem;
+			border-bottom: 1px solid #cccccc;
+		}
+		.contont121{
+			color: #343434;
+			width: 7rem;
+			height: 0.32rem;
+			font-size: 0.36rem;
+			margin-top: 0.3rem;
+			margin-left: 0.3rem;
+		}
+		.contont122{
+			color: #8a8a8a;
+			width: 1rem;
+			height: 0.20rem;
+			font-size: 0.3rem;
+			float: left;
+			margin-top: 0.22rem;
+			margin-left: 0.29rem;
+		}
+		.contont123{
+			color: #d21e1f;
+			width: 3rem;
+			height: 0.28rem;
+			font-size: 0.31rem;
+			float: left;
+			margin-top: 0.22rem;
+		}
+		.contont2{
+			width: 7.18rem;
+			height: 0.90rem;
+			border: 1px solid #fff;
+		}
+		.contont21{
+			width: 3.57rem;
+			height: 0.94rem;
+			border-bottom: 1px solid #cccccc;
+			float: left;
+			background-color: #fff;
+		}
+		.contont21 h1{
+			font-size: #323232;
+			font-size: 0.36rem;
+			margin-top: 0.30rem;
+			margin-left: 1.45rem;
+		}
+		.contont22{
+			width: 3.57rem;
+			height: 0.92rem;
+			border-bottom: 1px solid #cccccc;
+			border-left: 1px solid #cccccc;
+			float: left;
+			background-color: #fff;
+		}
+		.contont22 h1{
+			font-size: #323232;	
+			font-size: 0.36rem;
+			margin-top: 0.30rem;
+			margin-left: 1.45rem;
+		}
+		.contont2111{
+			color: #cf1f1f;
+			border-bottom: 2px solid #cf1f1f;
+		}
+		.contont3{
+			width: 7.18rem;
+			height: 4.98rem;
+			border: 1px solid #fff;
+		}
+		.contont3 img{
+			width: 6.6rem;
+			height: 4.2rem;
+			margin-top: 0.38rem;
+			margin-left: 0.3rem;
+		}
+		.contont4{
+			width: 7.18rem;
+			height: 2.06rem;
+			background-color: #e5e5e5;
+		}
+		.contont4 img{
+			width: 2.48rem;
+			height: 0.48rem;
+			margin-top: 0.48rem;
+			margin-left: 2.35rem;
+		}
+		.contont41{
+			color: #1e1e1e;
+			font-size: 0.45rem;
+			margin-left: 1.39rem;
+		}
+		.contont42{
+			color: #fe0000;
+			font-size: 0.45rem;
+			margin-left: 3.7rem;
+			margin-top: -0.69rem;
+		}
+		.contont43{
+			color: #1e1e1e;
+			font-size: 0.19rem;
+			margin-left: 1.37rem;
+		}
+		.contont5{
+			width: 7.18rem;
+			height: 0.2rem;
+			background-color: #e5e5e5;
+		}
+		.contont5 img{
+			width: 5.7rem;
+			height: 0.1rem;
+			margin-left: 1rem;
+		}
+		.contont6{
+			width: 7.18rem;
+			height: 2.55rem;
+			background-color: #e5e5e5;
+			border: 1px solid #e5e5e5;
+		}
+		.contont69{
+			width: 7.15rem;
+			height: 1.62rem;
+			margin-left: 0.22rem;
+			margin-top: 0.33rem;
+		}
+		.contont611{
+			width: 0.76rem;
+			height: 0.76rem;
+			border-bottom:10px solid #5f5f5f;
+			border-left: 10px solid #5f5f5f;
+			border-bottom-left-radius: 100%;
+			margin-top: 0.76rem;
+
+		}
+		.contont61{
+			width: 1.52rem;
+			height: 1.52rem;
+			border: 2px solid #5f5f5f;
+			border-radius: 50%;
+			float: left;
+			margin-left: 0.68rem;
+			transform: rotate(-30deg);
+		}
+		.contont612{
+			transform: rotate(30deg);
+			font-size: 0.55rem;
+			margin-left: 0.35rem;
+			margin-top: -1.2rem;
+
+		}
+		.contont613{
+			transform: rotate(30deg);
+			font-size: 0.18rem;
+			margin-left: 0.05rem;
+			margin-top: -0.13rem;
+
+		}
+		.contont62{
+			width: 1.52rem;
+			height: 1.52rem;
+			border: 2px solid #6e6e6e;
+			border-radius: 50%;
+			float: left;
+			margin-left: 0.46rem;
+		}
+		.contont621{
+			width: 0.76rem;
+			height: 0.76rem;
+			border-top:10px solid #5f5f5f;
+			border-right: 10px solid #5f5f5f;
+			border-top-right-radius: 100%;
+			margin-left: 0.76rem;
+		}
+		.contont622{
+			font-size: 0.5rem;
+			margin-left: 0.25rem;
+			margin-top: -0.5rem;
+
+		}
+		.contont623{
+			font-size: 0.18rem;
+			margin-left: 0.4rem;
+			margin-top: -0.1rem;
+
+		}
+		.contont63{
+			width: 1.52rem;
+			height: 1.52rem;
+			border: 2px solid #6e6e6e;
+			border-radius: 50%;
+			float: left;
+			margin-left: 0.46rem;
+		}
+		.contont631{
+			width: 0.76rem;
+			height: 0.76rem;
+			border-bottom:10px solid #5f5f5f;
+			border-left: 10px solid #5f5f5f;
+			border-bottom-left-radius: 100%;
+			margin-top: 0.76rem;
+		}
+		.contont632{
+			font-size: 0.5rem;
+			margin-left: 0.25rem;
+			margin-top: -1.25rem;
+
+		}
+		.contont633{
+			font-size: 0.18rem;
+			margin-left: 0.3rem;
+			margin-top: -0.1rem;
+
+		}
+		.contont7{
+			width: 7.18rem;
+			height: 7.5rem;
+			border: 1px solid #fff;
+		}
+		.contont71{
+			margin-left: 1.6rem;
+			margin-top: 0.45rem;
+			font-size: 0.5rem;
+			color: #202020;
+		}
+		.contont72{
+			font-size: 0.35rem;
+			margin-left: 0.83rem;
+			margin-top: 0.2rem;
+			color: #202020;
+		}
+		.contont73{
+			font-size: 0.26rem;
+			margin-left: 0.15rem;
+			color: #5d5d5d;
+			margin-top: 0.31rem;
+		}
+		.contont74{
+			font-size: 0.26rem;
+			color: #5d5d5d;
+			margin-left: 1.75rem;
+			margin-top: 0.2rem;
+		}
+		.contont7 img{
+			width: 6.6rem;
+			height: 3.82rem;
+			margin-top: 0.31rem;
+			margin-left: 0.29rem;
+		}
+		.contont8{
+			width: 7.12rem;
+			height: 8.92rem;
+			border: 1px solid #e5e5e5;
+			background-color: #e5e5e5;
+		}
+		.contont81{
+			margin-left: 1.6rem;
+			margin-top: 0.45rem;
+			font-size: 0.5rem;
+			color: #202020;
+		}
+		.contont82{
+			font-size: 0.33rem;
+			margin-left: 0.22rem;
+			margin-top: 0.2rem;
+			color: #202020;
+		}
+		.contont83{
+			font-size: 0.33rem;
+			color: #202020;
+			margin-left: 2.25rem;
+			margin-top: 0.1rem;
+		}
+		.contont84{
+			width: 4.62rem;
+			height: 4.62rem;
+			margin-left: 1.22rem;
+			margin-top: 0.4rem;
+		}
+		.contont85{
+			font-size: 0.33rem;
+			margin-left: 1.1rem;
+			margin-top: 0.2rem;
+			color: #202020;
+		}
+		.contont86{
+			font-size: 0.29rem;
+			margin-left: 0.7rem;
+		}
+		.contont87{
+			font-size: 0.29rem;
+			margin-left: 2.15rem;
+			margin-top: -0.48rem;
+			color: #fd0100;
+		}
+		.contont88{
+			font-size: 0.29rem;
+			margin-left: 4.19rem;
+			margin-top: -0.48rem;
+		}
+		.contont9{
+			width: 7.13rem;
+			height: 5rem;
+			border: 1px solid #e5e5e5;
+			background-color: #e5e5e5;
+		}
+		.contont91{
+			width: 6.6rem;
+			height: 4.2rem;
+			margin-left: 0.3rem;
+		}
+		.contont91 ul li{
+			list-style: none;
+		}
+		.contont911{
+			width: 6.58rem;
+			height: 0.53rem;
+
+		}
+		.contont9112{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #ffffff;
+		}
+		.contont91121{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9113{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			border-left: 1px solid #c8c8c8;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #ffffff;
+		}
+		.contont91131{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9114{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			border-left: 1px solid #c8c8c8;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #ffffff;
+		}
+		.contont91141{
+			margin-left: 0.31rem;
+			color: red;
+		}
+		.contont9112 .contont9113 .contont9114{
+			clear: both;
+		}
+		.contont9121{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;	
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+		}
+		.contont91211{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9122{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91221{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9123{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91231{
+			margin-left: 0.31rem;
+			color: red;
+		}
+		.contont9121 .contont9122 .contont9123{
+			clear: both;
+		}
+		.contont9131{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;	
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+		}
+		.contont91311{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9132{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91321{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9133{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91331{
+			margin-left: 0.31rem;
+			color: red;
+		}
+		.contont9131 .contont9132 .contont9133{
+			clear: both;
+		}
+		.contont9141{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;	
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+		}
+		.contont91411{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9142{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91421{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9143{
+			float: left;
+			width: 2.18rem;
+			height: 0.53rem;
+			line-height: 0.53rem;
+			font-size: 0.26rem;
+			background-color: #e5e5e5;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91431{
+			margin-left: 0.31rem;
+			color: red;
+		}
+		.contont9141 .contont9142 .contont9143{
+			clear: both;
+		}
+		.contont9151{
+			float: left;
+			width: 2.18rem;
+			height: 2rem;	
+			line-height: 2rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+		}
+		.contont91511{
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9152{
+			float: left;
+			width: 2.18rem;
+			height:2rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91521{
+			margin-top: 0.45rem;
+			margin-left: 0.31rem;
+			color: #1e1e1e;
+		}
+		.contont9153{
+			float: left;
+			width: 2.18rem;
+			height: 2rem;
+			font-size: 0.26rem;
+			background-color: #fff;
+			border-left: 1px solid #c8c8c8;
+		}
+		.contont91531{
+			margin-top: 0.1rem;
+			margin-left: 0.31rem;
+			color: red;
+		}
+		.contont9151 .contont9152 .contont9153{
+			clear: both;
+		}
+		.contont10{
+			width: 7.12rem;
+			height: 3.79rem;
+			border: 1px solid #fff;
+		}
+		.contont1011{
+			margin-top: 0.22rem;
+			margin-left: 0.3rem;
+		}
+		.contont101{
+			height: 3.16rem;
+			width: 2.18rem;
+			border: 1px solid #fff;
+			background-color: #c2c2c2;
+			float: left;
+		}
+		.contont1012{
+			margin-top: 0.29rem;
+			margin-left: 0.45rem;
+			font-size: 0.33rem;
+			color: #fff;
+		}
+		.contont101 img{
+			width: 1.23rem;
+			height: 0.88rem;
+			margin-left: 0.48rem;
+			margin-top: 0.36rem;
+		}
+		.contont1013{
+			margin-top: 0.3rem;
+			margin-left: 0.18rem;
+			font-size: 0.2rem;
+			color: #fff;
+		}
+		.contont102{
+			height: 3.16rem;
+			width: 2.18rem;
+			border: 1px solid #fff;
+			background-color: #b4b4b4;
+			float: left;
+		}
+		.contont1021{
+			margin-top: 0.29rem;
+			margin-left: 0.45rem;
+			font-size: 0.33rem;
+			color: #fff;
+		}
+		.contont102 img{
+			width: 1.04rem;
+			height: 0.84rem;
+			margin-left: 0.59rem;
+			margin-top: 0.4rem;
+		}
+		.contont1022{
+			margin-top: 0.3rem;
+			margin-left: 0.18rem;
+			font-size: 0.2rem;
+			color: #fff;
+		}
+		.contont103{
+			height: 3.16rem;
+			width: 2.18rem;
+			border: 1px solid #fff;
+			background-color: #c2c2c2;
+			float: left;
+		}
+		.contont1031{
+			margin-top: 0.29rem;
+			margin-left: 0.45rem;
+			font-size: 0.33rem;
+			color: #fff;
+		}
+		.contont103 img{
+			width: 0.83rem;
+			height: 0.9rem;
+			margin-left: 0.75rem;
+			margin-top: 0.3rem;
+		}
+		.contont1032{
+			margin-top: 0.3rem;
+			margin-left: 0.18rem;
+			font-size: 0.2rem;
+			color: #fff;
+		}
+		.contont774{
+			margin-left: 1.49rem;
+			font-size: 0.29rem;
+			color: #b1b1b1;
+		}
+		.contont777{
+			width: 2.04rem;
+			height: 2.04rem;
+			margin-top: 0.1rem;
+			margin-left: 2.57rem;
+		}
+		.contont936{
+			margin-top: 0.1rem;
+			margin-left: 2.7rem;
+			font-size: 0.25rem;
+			color: #b1b1b1;
+		}
+		.pkduibi{
+			width: 1.1rem;
+			height: 1.1rem;
+			border-radius: 50%;
+			border:1px solid #2aacff;
+			background-color: #2aacff;
+			position: relative;
+			top: -7.65rem;
+			left: 0.3rem;
+		}
+		.PK{
+			line-height: 1.1rem;
+			list-style: center;
+			font-size: 0.4rem;
+			margin-left: 0.24rem;
+			margin-top: -0.15rem;
+			color: #fff;
+		}
+		.duibi{
+			line-height: 1.1rem;
+			list-style: center;
+			font-size: 0.29rem;
+			font-weight: bold;
+			margin-left: 0.24rem;
+			margin-top: -0.8rem;
+			color: #fff;
+		}
+		.hongdou{
+			width: 0.23rem;
+			height: 0.2rem;
+			border-radius: 50%;
+			border: 5px solid #fff;
+			background-color: red;
+			margin-left: 0.8rem;
+			margin-top: -1.35rem;
+		}
+		.dongganxiaoren{
+			width: 1.99rem;
+			height: 0.99rem;
+			position: relative;
+			left: 4.94rem;
+			top: -8.8rem;
+		}
+	</style>
+</head>
+<body>
+    <div class="header">
+    	<div class="header1">
+    		<img src="图片/10.jpg" alt="">
+    	</div>
+    	<div class="header2">
+    	<button type="button" class="btn btn-info">
+    	<img src="图片/12.jpg" alt="">
+    	</button>
+    	<h1>产品详情</h1>
+    	</div>
+    </div>
+    <div class="contont1">
+    	<div class="contont11">
+    		<img src="图片/11.jpg" alt="">
+    	</div>
+    	<div class="contont12">
+    		<p class="contont121">智信够定制化55寸全高清LCD立式广告</p>
+    		<p class="contont122">价格：</p>
+    		<p class="contont123">￥29000.00元</p>
+    	</div>
+    </div>
+    <div class="contont2">
+    	<div class="contont21">
+    		<h1>描述</h1>
+    	</div>
+    	<div class="contont22">
+    		<h1>参数</h1>
+    	</div>
+    </div>
+    <div class="contont3">
+    	<img src="images/1.jpg" alt="">
+    </div>
+    <div class="contont4">
+    	<img src="images/2.jpg" alt="">
+    	<p class="contont41">为什么大家</p>
+    	<p class="contont42">都选12345V</p>   	
+    	<p class="contont43">Why do you choose 12345VWhy du you choose 12345V</p>
+    </div>
+    <div class="contont5">
+    	<img src="images/3.jpg" alt="">
+    </div>
+    <div class="contont6">
+    	<div class="contont69">
+    	    <div class="contont61">
+    	    	<div class="contont611"></div>
+    	    	<p class="contont612">IPS</p>
+    	    	<h1 class="contont613">平板精选面板</h1>
+    	    </div>
+    	    <div class="contont62">
+    	    	<div class="contont621"></div>
+    	    	<p class="contont622">55寸</p>
+    	    	<h1 class="contont623">黄金尺寸</h1>
+    	    </div>
+    	    <div class="contont63">
+    	    	<div class="contont631"></div>
+    	    	<p class="contont632">时尚</p>
+    	    	<h1 class="contont633">无边框设计</h1>
+    	    </div>
+    	</div>
+    </div>
+    <div class="contont7">
+    	<h1 class="contont71">IPS屏 - 精选面板</h1>
+    	<p class="contont72">高清液晶面板，画质细腻精彩呈现；</p>
+    	<p class="contont73">40英寸TFT面板，窄边设计，双屏拼缝为20mm，完美的拼</p>
+    	<p class="contont74">接效果；178°的超宽可视角度</p>
+    	<img src="images/4.jpg" alt="">
+    </div>
+    <div class="contont8">
+    	<h1 class="contont81">55英寸 - 黄金尺寸</h1>
+    	<p class="contont82">55寸黄金比例无论你是看电影、玩游戏，还是</p>
+    	<p class="contont83">办公都能满足你。</p>
+    	<img class="contont84" src="images/5.jpg" alt="">
+    	<p class="contont85">不知道选什么尺寸？炫55寸就对了</p>
+    	<p class="contont86">性价比超高</p>
+    	<p class="contont87">全网40%的客户</p>
+    	<p class="contont88">选55寸显示器产品</p>
+    </div>
+    <div class="contont9">
+    	<div class="contont91">
+    		<ul class="contont911">
+    			<li class="contont9112">
+    			    <p class="contont91121">尺寸</p>
+    			</li>
+    			<li class="contont9113">
+    			    <p class="contont91131">32英寸</p>
+    			</li>
+    			<li class="contont9114">
+    				<p class="contont91141">55英寸</p>
+    			</li>
+    		</ul>
+    		<ul class="contont912">
+    			<li class="contont9121">
+    			    <p class="contont91211">分辨率</p>
+    			</li>
+    			<li class="contont9122">
+    				<p class="contont91221">1920*1080</p>
+    			</li>
+    			<li class="contont9123">
+    				<p class="contont91231">1920*1080</p>
+    			</li>
+    		</ul>
+    		<ul class="contont913">
+    			<li class="contont9131">
+    			    <p class="contont91311">点距</p>
+    			</li>
+    			<li class="contont9132">
+    			    <p class="contont91321">0.245mm</p>
+    			</li>
+    			<li class="contont9133">
+    			    <p class="contont91331">0.245mm</p>
+    			</li>
+    		</ul>
+    		<ul class="contont914">
+    			<li class="contont9141">
+    			    <p class="contont91411">价格</p>
+    			</li>
+    			<li class="contont9142">
+    			    <p class="contont91421">3.6万左右</p>
+    			</li>
+    			<li class="contont9143">
+    			    <p class="contont91431">3.6万左右</p>
+    			</li>
+    		</ul>
+    		<ul class="contont915">
+    			<li class="contont9151">
+    				<p class="contont91511">评价</p>
+    			</li>
+    			<li class="contont9152">
+    				<p class="contont91521">屏幕较小，看电影不够爽，点距小看字费力</p>
+    			</li>
+    			<li class="contont9153">
+    				<p class="contont91531">屏幕和点距大小适中，画质精细，无论是影音娱乐还是上网办公都比较方便</p>
+    			</li>
+    		</ul>
+    	</div>
+    </div>
+    <div class="contont10">
+    	<div class="contont1011">
+    	    <div class="contont101">
+    	    	<h1 class="contont1012">包无亮点</h1>
+    	    	<img src="images/7.jpg" alt="">
+    	    	<p class="contont1013">我们从源头进行把关<br>精选A+屏，保无毫点</p>
+    	    </div>
+    	    <div class="contont102">
+    	    	<h1 class="contont1021">顺丰包邮</h1>
+    	    	<img src="images/6.jpg" alt="">
+    	    	<p class="contont1022">全国顺丰包邮，精选<br>更快速、更安全、服<br>务更好的快递</p>
+    	    </div>
+    	    <div class="contont103">
+    	    	<h1 class="contont1031">无忧退换</h1>
+    	    	<img src="images/8.jpg" alt="">
+    	    	<p class="contont1032">7天无理由退换货，<br>15天质量问题免费换<br>新，让您退换无忧</p>
+    	    </div>
+    	</div>
+    </div>
+    <p class="contont774">如需购买，请拨打 400-6699-901</p>
+    <img class="contont777" src="images/9.jpg" alt="">
+    <p class="contont936">扫一扫关注我们</p>
+    <div class="pkduibi">
+    	<p class="PK">PK</p>
+    	<p class="duibi">对比</p>
+    	<div class="hongdou"></div>
+    </div>
+    <img class="dongganxiaoren" src="images/10.jpg" alt="">
+	<script src="fontsizeset.js"></script>
+	<script src="jquery.js"></script>
+	<script>
+		$('.contont21').click(function(){
+			$('.contont21').toggleClass('contont2111')
+			$('.contont22').removeClass('contont2111')
+		})
+		$('.contont22').click(function(){
+			$('.contont22').toggleClass('contont2111')
+			$('.contont21').removeClass('contont2111')
+		})
+	</script>
+</body>
+</html>
